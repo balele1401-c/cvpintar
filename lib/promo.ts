@@ -11,7 +11,35 @@ export interface PromoCodeDetails {
 }
 
 export const VALID_PROMO_CODES: Record<string, PromoCodeDetails> = {
-  // Special Owner & VIP Promo (Bayar Rp 100)
+  // Special Owner & Testing Promo (Rp 1.000 & Rp 10.000 for Bank/DOKU limits)
+  IQBAL1K: {
+    code: 'IQBAL1K',
+    discountPercentage: 96,
+    fixedPrice: 1000,
+    label: 'VIP Owner Test (Rp1.000)',
+    description: 'Harga spesial khusus owner Rp 1.000 (QRIS/E-Wallet).',
+  },
+  IQBAL10K: {
+    code: 'IQBAL10K',
+    discountPercentage: 60,
+    fixedPrice: 10000,
+    label: 'VIP Owner Test (Rp10.000)',
+    description: 'Harga spesial khusus owner Rp 10.000 (Semua Bank & VA).',
+  },
+  TEST1K: {
+    code: 'TEST1K',
+    discountPercentage: 96,
+    fixedPrice: 1000,
+    label: 'Testing QRIS (Rp1.000)',
+    description: 'Harga spesial testing Rp 1.000.',
+  },
+  TEST10K: {
+    code: 'TEST10K',
+    discountPercentage: 60,
+    fixedPrice: 10000,
+    label: 'Testing Bank VA (Rp10.000)',
+    description: 'Harga spesial testing Rp 10.000.',
+  },
   IQBAL100: {
     code: 'IQBAL100',
     discountPercentage: 99.6,
@@ -32,13 +60,6 @@ export const VALID_PROMO_CODES: Record<string, PromoCodeDetails> = {
     fixedPrice: 100,
     label: 'Promo Khusus (Rp100)',
     description: 'Harga spesial bayar hanya Rp 100.',
-  },
-  VIP100: {
-    code: 'VIP100',
-    discountPercentage: 99.6,
-    fixedPrice: 100,
-    label: 'VIP Access (Rp100)',
-    description: 'Akses penuh CVPintar Pro hanya Rp 100.',
   },
 
   // Public Launching Promo (50% Off)
