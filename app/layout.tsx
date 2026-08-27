@@ -15,11 +15,64 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
+  metadataBase: new URL('https://cvpintarku.my.id'),
+  title: {
+    default: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
+    template: '%s | CVPintar',
+  },
   description:
     'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
-  keywords: ['CV ATS', 'Bikin CV', 'AI CV Generator', 'CVPintar', 'Lamaran Kerja Indonesia', 'Resume Builder'],
-  authors: [{ name: 'CVPintar' }],
+  keywords: [
+    'CV ATS',
+    'Bikin CV',
+    'AI CV Generator',
+    'CVPintar',
+    'Lamaran Kerja Indonesia',
+    'Resume Builder',
+    'Format Standar HRD',
+    'Cek Skor ATS',
+  ],
+  authors: [{ name: 'CVPintar', url: 'https://cvpintarku.my.id' }],
+  creator: 'CVPintar',
+  publisher: 'CVPintar',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'id_ID',
+    url: 'https://cvpintarku.my.id',
+    siteName: 'CVPintar',
+    title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
+    description:
+      'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'CVPintar AI CV Platform',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
+    description:
+      'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
+    images: ['/logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
