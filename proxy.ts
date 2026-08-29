@@ -14,7 +14,6 @@ export async function proxy(request: NextRequest) {
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
     'placeholder-anon-key';
 
-
   const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
     cookies: {
       getAll() {
@@ -76,9 +75,11 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
+     * - sitemap.xml
+     * - robots.txt
      * - api/webhooks (public webhooks)
-     * - public files (svg, png, jpg, etc.)
+     * - public static files (svg, png, jpg, etc.)
      */
-    '/((?!_next/static|_next/image|favicon.ico|api/webhooks|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|api/webhooks|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|xml|txt)$).*)',
   ],
 };
