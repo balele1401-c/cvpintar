@@ -36,19 +36,19 @@ export const metadata: Metadata = {
   creator: 'CVPintar',
   publisher: 'CVPintar',
   alternates: {
-    canonical: '/',
+    canonical: 'https://cvpintarku.my.id/',
   },
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://cvpintarku.my.id',
+    url: 'https://cvpintarku.my.id/',
     siteName: 'CVPintar',
     title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
     description:
       'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
     images: [
       {
-        url: '/logo.png',
+        url: 'https://cvpintarku.my.id/logo.png',
         width: 1200,
         height: 630,
         alt: 'CVPintar AI CV Platform',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
     description:
       'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
-    images: ['/logo.png'],
+    images: ['https://cvpintarku.my.id/logo.png'],
   },
   robots: {
     index: true,
