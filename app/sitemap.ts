@@ -1,12 +1,12 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://cvpintarku.my.id';
+  const baseUrl = 'https://www.cvpintarku.my.id';
   const currentDate = new Date().toISOString();
 
   return [
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 1.0,

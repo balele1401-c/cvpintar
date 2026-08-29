@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cvpintarku.my.id'),
+  metadataBase: new URL('https://www.cvpintarku.my.id'),
   title: {
     default: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
     template: '%s | CVPintar',
@@ -32,23 +32,23 @@ export const metadata: Metadata = {
     'Format Standar HRD',
     'Cek Skor ATS',
   ],
-  authors: [{ name: 'CVPintar', url: 'https://cvpintarku.my.id' }],
+  authors: [{ name: 'CVPintar', url: 'https://www.cvpintarku.my.id' }],
   creator: 'CVPintar',
   publisher: 'CVPintar',
   alternates: {
-    canonical: 'https://cvpintarku.my.id/',
+    canonical: 'https://www.cvpintarku.my.id/',
   },
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://cvpintarku.my.id/',
+    url: 'https://www.cvpintarku.my.id/',
     siteName: 'CVPintar',
     title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
     description:
       'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
     images: [
       {
-        url: 'https://cvpintarku.my.id/logo.png',
+        url: 'https://www.cvpintarku.my.id/logo.png',
         width: 1200,
         height: 630,
         alt: 'CVPintar AI CV Platform',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: 'CVPintar — Buat CV Profesional dengan AI dalam Hitungan Menit',
     description:
       'Platform AI CV & Lamaran Kerja untuk mahasiswa, fresh graduate, dan job seeker di Indonesia. Buat CV ATS-friendly, optimasi dengan AI, dan siap kerja.',
-    images: ['https://cvpintarku.my.id/logo.png'],
+    images: ['https://www.cvpintarku.my.id/logo.png'],
   },
   robots: {
     index: true,
